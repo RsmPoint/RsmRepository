@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Basketball tim</title>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script>
+     var JohnScoreFirstGame = 88;
+     var JohnScoreSecondGame = 120;
+     var JohnScoreThirdGame = 103;
+     var MikeScoreFirstGame = 116;
+     var MikeScoreSecondGame = 94;
+     var MikeScoreThirdGame = 123;
+     var MaryScoreFirstGame = 97;
+     var MaryScoreSecondGame = 134;
+     var MaryScoreThirdGame = 105;
+     var JohnAverageScore = (JohnScoreFirstGame + JohnScoreSecondGame + JohnScoreThirdGame) / 3;
+     var MikeAverageScore = (MikeScoreFirstGame + MikeScoreSecondGame+ MikeScoreThirdGame) / 3;
+     var MaryAverageScore = (MaryScoreFirstGame + MaryScoreSecondGame + MaryScoreThirdGame) / 3;
+     console.log(JohnAverageScore);
+     console.log(MikeAverageScore);
+     console.log(MaryAverageScore);
+     
+    if (JohnAverageScore > MikeAverageScore && JohnAverageScore > MaryAverageScore) {
+    console.log("John is Winner with " + JohnAverageScore + " point");
+    }
+    else if (MikeAverageScore > JohnAverageScore && MikeAverageScore > MaryAverageScore) {
+    console.log("Mike is winner with " + MikeAverageScore + " point");
+    }
+    else if (MaryAverageScore > JohnAverageScore && MaryAverageScore > MikeAverageScore) {
+    console.log("Mary is winner with " + MaryAverageScore + " point");
+    }
+    else if (JohnAverageScore === MikeAverageScore && JohnAverageScore === MaryAverageScore) {
+    console.log("It is Draw");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>BodyMassIndex</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="max-width:15em;">
+            <img src="img/BodyMassIndex.jpg" class="card-img-top," alt="BodyMassIndexPicture" height="175em">
+            <div class="card-body">
+              <h5 class="card-title">Body Mass Index Calculator</h5>
+              <p class="card-text"></p>
+              <div class="form-group">
+                <label for="mass">Mass</label>
+                <input type="text" class="form-control" id="Height" placeholder="">
+                <label for="Height">Height</label>
+                <input type="text" class="form-control" id="Height" placeholder="">
+                <button type="button" class="btn btn-primary">Calculate</button>
+                <input type="text" class="form-control" id="ovde nesto drugo" placeholder="">
+              </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var massMark = 97;
+        var heightMark = 1.85;
+
+        var massJohn = 95;    
+        var heightJohn = 1.75
+
+        var BodyMassIndexMark = massMark / (heightMark * 2);
+        var BodyMassIndexJohn = massJohn / (heightJohn * 2);
+
+        console.log(BodyMassIndexMark, BodyMassIndexJohn)
+
+        if (BodyMassIndexMark > BodyMassIndexJohn) {
+            console.log("Mark has higher BMI" + BMIMark);
+            }
+        else if (BodyMassIndexJohn > BodyMassIndexMark) {
+           console.log("John has higher BMI");
+            }
+        else if (BodyMassIndexJohn = BodyMassIndexMark) {
+            console.log("They have the same BMI");
+            }
+       
+        // ovde treba nekako html i java script da gi povrzam..malku mi e nejasno. 
+        // treba da gi povikam preku id ili class i da vratam nazad vo calkulate-metodot vaka mi e jasen..postapkata siva.
+    </script>
+</body>
+</html>
